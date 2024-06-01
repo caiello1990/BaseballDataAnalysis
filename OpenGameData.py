@@ -14,8 +14,6 @@ pd.set_option('display.max_columns', 1000)
 pd.set_option('display.max_rows', 1000)
 
 season_dir = "Baseball Game Data 2010-2023"
-# fname = '/Users/Chris Aiello/PycharmProjects/untitled/' + season_dir + '/' + 'gl2022.txt'
-# df = pd.read_csv(fname, header=None)
 
 column_names = ['date', 'dblheader_code', 'day_of_week', 'team_v', 'league_v', 'game_no_v',
                 'team_h', 'league_h', 'game_no_h', 'runs_v', 'runs_h', 'outs_total', 'day_night',
