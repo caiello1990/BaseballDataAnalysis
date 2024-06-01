@@ -9,7 +9,7 @@ def downloadToCSV(name_of_file, start_date, end_date):
     statcast_data = pybaseball.statcast(start_dt=start_date, end_dt=end_date)
     statcast_data.to_csv(name_of_file, index=False)
 
-def doStuff():
+def handlePitchByPitch():
     pitchByPitch_df = pd.read_csv(filename)
     batterIDs = pitchByPitch_df['batter']
 
@@ -33,7 +33,7 @@ def getBatterNameDict(batterObjects):
     return batterNameDict
 
 if fileExists:
-    doStuff()
+    handlePitchByPitch()
 else:
     downloadToCSV(filename, "2023-06-25", "2023-07-04")
 
